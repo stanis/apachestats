@@ -93,7 +93,9 @@ class ApacheLogStatsDTO {
 	}
 }
 
-
+/**
+* Collects the stats
+*/
 class ApacheLogStatsCollector {
 	/**
 	* Parses the file with apache combined log file and collects the stats
