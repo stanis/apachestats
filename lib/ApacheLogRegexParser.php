@@ -14,8 +14,8 @@ class ApacheLogRegexParser extends RegexParser {
 	// We need to extract the date here
 	function parseLine($line) {
 		$data = parent::parseLine($line);
-		// $data['date'] = substr(split(":", $data['time'])[0], 1); # I am not sure we have PHP 5.5
-		$tmp = split(":", $data['time']);
+		// $data['date'] = substr(explode(":", $data['time'])[0], 1); # I am not sure that we have PHP 5.5
+		$tmp = explode(":", $data['time']);
 		$data['date'] = substr($tmp[0], 1);
 		return $data;
 	}
