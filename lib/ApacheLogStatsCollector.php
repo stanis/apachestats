@@ -75,9 +75,7 @@ class ApacheLogStatsDTO {
 	}
 
 	/**
-	* Returns the average values of hits and visitors
-	*
-	* @return array a hash of averages of hits and visitors
+	* Calculates the average values of hits and visitors
 	*/
 	public function calculateAverages() {
 		$count = count($this->dates);
